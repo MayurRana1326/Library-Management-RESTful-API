@@ -39,7 +39,31 @@ This is a RESTful API built with Node.js and Express.js for managing a library's
     npm start
    ```
 
-## API Reference
+## API Reference for authentication
+
+1. Sign up:
+```http
+  POST /api/auth/signup
+```
+
+| Body Parameter | Type     | Description                  |
+| :-------- | :------- | :-------------------------------- |
+| `firstName`      | `string` | **Required**. first name of the user|
+| `lastName`      | `string` | **Required**. first name of the user |
+| `email`      | `string` | **Required**. email of the user |
+| `password`      | `string` | **Required**. password of the user |
+
+2. Login:
+```http
+  POST /api/auth/login
+```
+
+| Body Parameter | Type     | Description                  |
+| :-------- | :------- | :-------------------------------- |
+| `email`      | `string` | **Required**. email of the user |
+| `password`      | `string` | **Required**. password of the user |
+
+## API Reference for books
 
 1. Retrieve all books:
 
